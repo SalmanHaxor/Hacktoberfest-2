@@ -58,11 +58,11 @@ for changed_file_json in changed_files_json:
     head, tail = os.path.split(changed_file_json)
     if head[0] != tail[0]:
         there_was_an_error = True
-        print("🔥 File is in the wrong folder.")
+        print("🔥 File is in the folder salah.")
 
     if not os.path.basename(changed_file_json)[0].isupper():
         there_was_an_error = True
-        print("🔥 File name not capitalized.")
+        print("🔥 Berkas name not capitalized.")
 
     try:
         with open(changed_file_json) as data_file:
